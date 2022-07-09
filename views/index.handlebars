@@ -1,0 +1,15 @@
+<main>
+
+    {{#each digimon}}
+
+        <div class="digimonCard">
+        <div class="flex">
+            <h2>{{name}}</h2><span class="fa fa-star" onclick="favorite('{{name}}')" id="star{{name}}"></span>
+        </div>
+        <img src="{{img}}" alt="{{name}}">
+        <p>{{level}}</p>
+        </div>
+
+    {{/each}}
+</main>
+<script src="js/index.js"></script>
